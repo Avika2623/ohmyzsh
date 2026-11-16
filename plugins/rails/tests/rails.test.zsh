@@ -8,7 +8,7 @@ repo_root=${repo_root:A}
 local test_dir=$(mktemp -d) || exit 1
 trap 'command rm -rf -- "$test_dir"' EXIT
 local zdotdir="$test_dir/zdotdir" stub_dir="$test_dir/bin" fixture="$test_dir/app"
-mkdir -p "$zdotdir" "$stub_dir" "$fixture"
+mkdir -p "$zdotdir" "$stub_dir" "$fixture" "$fixture/bin"
 export ZDOTDIR="$zdotdir" ZSH="$repo_root" COMMAND_LOG="$test_dir/argv.log"
 
 cat > "$stub_dir/command-stub" <<'STUB'
@@ -21,9 +21,21 @@ print -r -- "stub-output:${0:t}"
 exit "${STUB_STATUS:-0}"
 STUB
 chmod +x "$stub_dir/command-stub"
-for name in rails rake tail ruby bundle; do
+for name in rake tail ruby bundle; do
   ln -s command-stub "$stub_dir/$name"
 done
+
+# Local application binstub for rails
+cat > "$fixture/bin/rails" <<'LOCAL_STUB'
+#!/bin/zsh
+print -r -- "local-rails" >> "$COMMAND_LOG"
+for arg in "$@"; do
+  printf '%s\n' "${(qqq)arg}" >> "$COMMAND_LOG"
+done
+print -r -- "stub-output:local-rails"
+exit "${STUB_STATUS:-0}"
+LOCAL_STUB
+chmod +x "$fixture/bin/rails"
 
 export PATH="$stub_dir:/usr/bin:/bin:/usr/sbin:/sbin"
 rehash
@@ -57,7 +69,7 @@ record_result() {
   fi
 }
 
-# Ordinary success: fallback Rails command preserves each argument, including spaces.
+# Ordinary success: local Rails executable preserves each argument, including spaces.
 cd "$fixture"
 : >| "$COMMAND_LOG"
 before=$(command find "$fixture" -print | LC_ALL=C sort)
@@ -65,8 +77,8 @@ eval "rails routes --grep 'admin routes'" >| "$test_dir/output" 2>&1
 exit_code=$?
 printf '%s' "$exit_code" >| "$test_dir/status"
 after=$(command find "$fixture" -print | LC_ALL=C sort)
-expected_log=$'rails\n"routes"\n"--grep"\n"admin routes"'
-record_result 'rails fallback ordinary success' 'stub-output:rails' '0' "$expected_log"
+expected_log=$'local-rails\n"routes"\n"--grep"\n"admin routes"'
+record_result 'rails local executable ordinary success' 'stub-output:local-rails' '0' "$expected_log"
 if [[ "$before" == "$after" ]]; then
   print -r -- "PASS: rails repository state unchanged | before=${(qqq)before} | after=${(qqq)after}"
 else
@@ -82,7 +94,7 @@ exit_code=$?
 printf '%s' "$exit_code" >| "$test_dir/status"
 after=$(command find "$fixture" -print | LC_ALL=C sort)
 expected_log=$'rake\n"-T"'
-record_result 'rake missing-project fallback edge' 'stub-output:rake' '0' "$expected_log"
+record_result 'rake missing-Gemfile edge' 'stub-output:rake' '0' "$expected_log"
 if [[ "$before" == "$after" ]]; then
   print -r -- "PASS: rake missing-project state unchanged | before=${(qqq)before} | after=${(qqq)after}"
 else
@@ -90,15 +102,15 @@ else
   (( failures++ ))
 fi
 
-# Failure status from the external command is returned unchanged by the wrapper.
+# Empty-args and failure status propagation: empty string is preserved and exit status returned.
 : >| "$COMMAND_LOG"
 export STUB_STATUS=7
-eval "rails test" >| "$test_dir/output" 2>&1
+eval 'rails ""' >| "$test_dir/output" 2>&1
 exit_code=$?
 printf '%s' "$exit_code" >| "$test_dir/status"
 unset STUB_STATUS
-expected_log=$'rails\n"test"'
-record_result 'rails external failure status propagation' 'stub-output:rails' '7' "$expected_log"
+expected_log=$'local-rails\n""'
+record_result 'rails empty-args failure status propagation' 'stub-output:local-rails' '7' "$expected_log"
 
 # devlog is only expanded to tail; the stub prevents any real follow operation.
 : >| "$COMMAND_LOG"

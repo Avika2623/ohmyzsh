@@ -18,25 +18,21 @@
     "syntax_exit_status": 0,
     "syntax_output": "",
     "test_exit_status": 0,
-    "test_output": "PASS: rails fallback ordinary success | output=\"stub-output:rails\" | status=0 | argv=\"rails\n\\\"routes\\\"\n\\\"--grep\\\"\n\\\"admin routes\\\"\"\nPASS: rails repository state unchanged | before=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.kpiC7tp7Io/app\" | after=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.kpiC7tp7Io/app\"\nPASS: rake missing-project fallback edge | output=\"stub-output:rake\" | status=0 | argv=\"rake\n\\\"-T\\\"\"\nPASS: rake missing-project state unchanged | before=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.kpiC7tp7Io/app\" | after=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.kpiC7tp7Io/app\"\nPASS: rails external failure status propagation | output=\"stub-output:rails\" | status=7 | argv=\"rails\n\\\"test\\\"\"\nPASS: devlog alias expansion | output=\"stub-output:tail\" | status=0 | argv=\"tail\n\\\"-f\\\"\n\\\"log/development.log\\\"\"\n4 tests, 0 failures\n",
+    "test_output": "PASS: rails local executable ordinary success | output=\"stub-output:local-rails\" | status=0 | argv=\"local-rails\n\\\"routes\\\"\n\\\"--grep\\\"\n\\\"admin routes\\\"\"\nPASS: rails repository state unchanged | before=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin/rails\" | after=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin/rails\"\nPASS: rake missing-Gemfile edge | output=\"stub-output:rake\" | status=0 | argv=\"rake\n\\\"-T\\\"\"\nPASS: rake missing-project state unchanged | before=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin/rails\" | after=\"/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin\n/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/tmp.up2IU3dGaJ/app/bin/rails\"\nPASS: rails empty-args failure status propagation | output=\"stub-output:local-rails\" | status=7 | argv=\"local-rails\n\\\"\\\"\"\nPASS: devlog alias expansion | output=\"stub-output:tail\" | status=0 | argv=\"tail\n\\\"-f\\\"\n\\\"log/development.log\\\"\"\n4 tests, 0 failures\n",
     "observed_test_names": [
-      "rails fallback ordinary success",
-      "rake missing-project fallback edge",
-      "rails external failure status propagation",
+      "rails local executable ordinary success",
+      "rake missing-Gemfile edge",
+      "rails empty-args failure status propagation",
       "devlog alias expansion"
     ],
     "test_summary": "4 tests, 0 failures",
     "repository_status_before": [
-      " M plugins/rails/README.md",
-      " M plugins/rails/rails.plugin.zsh",
-      "?? plugins/rails/tests/",
-      "?? work/"
+      " M plugins/rails/tests/rails.test.zsh",
+      " M work/R14-T001/results.json"
     ],
     "repository_status_after": [
-      " M plugins/rails/README.md",
-      " M plugins/rails/rails.plugin.zsh",
-      "?? plugins/rails/tests/",
-      "?? work/"
+      " M plugins/rails/tests/rails.test.zsh",
+      " M work/R14-T001/results.json"
     ]
   },
   "tool_versions": {
