@@ -11,16 +11,16 @@
     {
       "name": "success",
       "input": {
-        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/working directory with spaces",
-        "target": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project",
-        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/bin"
+        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/working directory with spaces",
+        "target": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project",
+        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/bin"
       },
       "expected": {
         "exit_status": 0,
         "argv": [
           [
             "add",
-            "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project"
+            "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project"
           ],
           [
             "init",
@@ -36,7 +36,7 @@
         "argv": [
           [
             "add",
-            "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project"
+            "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project"
           ],
           [
             "init",
@@ -45,28 +45,20 @@
             "zsh"
           ]
         ],
-        "stdout": "setup_status=0\nbootstrap_status=0\ncommand_output=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project\ncommand_status=0\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/working directory with spaces\nafter_pwd=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project\n",
+        "stdout": "setup_status=0\nbootstrap_status=0\ncommand_output=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project\ncommand_status=0\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/working directory with spaces\nafter_pwd=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project\n",
         "stderr": "",
-        "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/working directory with spaces",
-        "state_after": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-t4b2ulut/my project",
-        "repository_before": [
-          " M plugins/zoxide/README.md",
-          "?? plugins/zoxide/tests/",
-          "?? work/"
-        ],
-        "repository_after": [
-          " M plugins/zoxide/README.md",
-          "?? plugins/zoxide/tests/",
-          "?? work/"
-        ]
+        "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/working directory with spaces",
+        "state_after": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-success-z3l66s_4/my project",
+        "repository_before": [],
+        "repository_after": []
       }
     },
     {
       "name": "missing-command",
       "input": {
-        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/working directory with spaces",
-        "target": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/my project",
-        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/bin"
+        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/working directory with spaces",
+        "target": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/my project",
+        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/bin"
       },
       "expected": {
         "exit_status": 0,
@@ -76,20 +68,12 @@
       "actual": {
         "exit_status": 0,
         "argv": [],
-        "stdout": "[oh-my-zsh] zoxide not found, please install it from https://github.com/ajeetdsouza/zoxide\nbootstrap_status=0\nfunction_z=0\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/working directory with spaces\n",
+        "stdout": "[oh-my-zsh] zoxide not found, please install it from https://github.com/ajeetdsouza/zoxide\nbootstrap_status=0\nfunction_z=0\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/working directory with spaces\n",
         "stderr": "",
-        "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/working directory with spaces",
-        "state_after": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-10wkv_q_/working directory with spaces",
-        "repository_before": [
-          " M plugins/zoxide/README.md",
-          "?? plugins/zoxide/tests/",
-          "?? work/"
-        ],
-        "repository_after": [
-          " M plugins/zoxide/README.md",
-          "?? plugins/zoxide/tests/",
-          "?? work/"
-        ]
+        "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/working directory with spaces",
+        "state_after": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/zoxide-missing-command-w2nhyq87/working directory with spaces",
+        "repository_before": [],
+        "repository_after": []
       }
     }
   ],
