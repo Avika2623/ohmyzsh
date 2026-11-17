@@ -231,7 +231,7 @@
             "::args:_files"
           ]
         },
-        "output": "PASS: success | exit_status=0 | state_before=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/home\" | state_after=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-w1h39pjz/home\"\n",
+        "output": "PASS: success | exit_status=0 | state_before=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/home\" | state_after=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-success-rdyvw4l9/home\"\n",
         "log_error": null
       },
       {
@@ -356,22 +356,12 @@
             "::args:_files"
           ]
         },
-        "output": "PASS: argument-error | exit_status=37 | state_before=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/home\" | state_after=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-ghlc6bsu/home\"\n",
+        "output": "PASS: argument-error | exit_status=37 | state_before=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/home\" | state_after=\"PWD=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/working directory with spaces\nPATH=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/bin\nZDOTDIR=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/zdotdir\nHOME=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/autopep8-argument-error-8w7opofr/home\"\n",
         "log_error": null
       }
     ],
-    "repository_status_before": [
-      " M plugins/autopep8/README.md",
-      " M plugins/autopep8/_autopep8",
-      "?? plugins/autopep8/tests/",
-      "?? work/"
-    ],
-    "repository_status_after": [
-      " M plugins/autopep8/README.md",
-      " M plugins/autopep8/_autopep8",
-      "?? plugins/autopep8/tests/",
-      "?? work/"
-    ]
+    "repository_status_before": [],
+    "repository_status_after": []
   },
   "tool_versions": {
     "zsh": "zsh 5.9 (arm64-apple-darwin25.0)",
