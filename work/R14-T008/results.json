@@ -38,21 +38,13 @@
         "firefox"
       ]
     ],
-    "stdout": "failure_status=2\nfailure_stdout=\nfailure_stderr=Error: no cask name was provided (use: bci <cask>)\nsuccess_status=0\nsuccess_stdout=firefox: 130.0\nsuccess_stderr=\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces\nafter_failure_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces\nafter_success_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces\n",
+    "stdout": "failure_status=2\nfailure_stdout=\nfailure_stderr=Error: no cask name was provided (use: bci <cask>)\nsuccess_status=0\nsuccess_stdout=firefox: 130.0\nsuccess_stderr=\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces\nafter_failure_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces\nafter_success_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces\n",
     "stderr": "",
-    "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces",
-    "state_after_failure": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces",
-    "state_after_success": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-qrk_vg63/working directory with spaces",
-    "repository_before": [
-      " M plugins/brew/README.md",
-      "?? plugins/brew/tests/",
-      "?? work/"
-    ],
-    "repository_after": [
-      " M plugins/brew/README.md",
-      "?? plugins/brew/tests/",
-      "?? work/"
-    ]
+    "state_before": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces",
+    "state_after_failure": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces",
+    "state_after_success": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/brew-bci-v2whvl8s/working directory with spaces",
+    "repository_before": [],
+    "repository_after": []
   },
   "tool_versions": {
     "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.3.34.2)]",
