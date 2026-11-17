@@ -37,18 +37,8 @@
         "output": "PASS: preserve-custom | exit=0 | ANT_ARGS_before=\"-verbose -Dmessage=two words\" | ANT_ARGS_after=\"-verbose -Dmessage=two words\" | unrelated_before=\"keep-this-value\" | unrelated_after=\"keep-this-value\"\n"
       }
     ],
-    "repository_status_before": [
-      " M plugins/ant/README.md",
-      " M plugins/ant/ant.plugin.zsh",
-      "?? plugins/ant/tests/",
-      "?? work/"
-    ],
-    "repository_status_after": [
-      " M plugins/ant/README.md",
-      " M plugins/ant/ant.plugin.zsh",
-      "?? plugins/ant/tests/",
-      "?? work/"
-    ]
+    "repository_status_before": [],
+    "repository_status_after": []
   },
   "tool_versions": {
     "zsh": "zsh 5.9 (arm64-apple-darwin25.0)",
