@@ -11,9 +11,9 @@
     {
       "name": "success",
       "input": {
-        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/working directory with spaces",
-        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/bin",
-        "zdotdir": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/zdotdir"
+        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/working directory with spaces",
+        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/bin",
+        "zdotdir": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/zdotdir"
       },
       "expected": {
         "jfrog": {
@@ -33,34 +33,26 @@
         },
         "fixture_exit_status": 0,
         "completion_status": 0,
-        "stdout": "case=success\ncompletion_status=0\ndescribe_calls=1\ncandidate_count=2\ncandidate=repo-one\ncandidate=repo two\nfile_calls=0\ncompletion_stderr=\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/working directory with spaces\nbefore_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/bin\nafter_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/bin\n",
+        "stdout": "case=success\ncompletion_status=0\ndescribe_calls=1\ncandidate_count=2\ncandidate=repo-one\ncandidate=repo two\nfile_calls=0\ncompletion_stderr=\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/working directory with spaces\nbefore_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/bin\nafter_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/bin\n",
         "stderr": "",
         "state_before": {
-          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/working directory with spaces",
-          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/bin"
+          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/working directory with spaces",
+          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/bin"
         },
         "state_after": {
-          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/working directory with spaces",
-          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-p_o2vfmf/bin"
+          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/working directory with spaces",
+          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-success-bm2r0x7y/bin"
         },
-        "repository_before": [
-          " M plugins/jfrog/README.md",
-          "?? plugins/jfrog/tests/",
-          "?? work/"
-        ],
-        "repository_after": [
-          " M plugins/jfrog/README.md",
-          "?? plugins/jfrog/tests/",
-          "?? work/"
-        ]
+        "repository_before": [],
+        "repository_after": []
       }
     },
     {
       "name": "cli-failure",
       "input": {
-        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/working directory with spaces",
-        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/bin",
-        "zdotdir": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/zdotdir"
+        "cwd": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/working directory with spaces",
+        "path": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/bin",
+        "zdotdir": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/zdotdir"
       },
       "expected": {
         "jfrog": {
@@ -80,26 +72,18 @@
         },
         "fixture_exit_status": 0,
         "completion_status": 23,
-        "stdout": "case=cli-failure\ncompletion_status=23\ndescribe_calls=1\ncandidate_count=0\nfile_calls=1\ncompletion_stderr=simulated JFrog CLI failure\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/working directory with spaces\nbefore_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/bin\nafter_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/bin\n",
+        "stdout": "case=cli-failure\ncompletion_status=23\ndescribe_calls=1\ncandidate_count=0\nfile_calls=1\ncompletion_stderr=simulated JFrog CLI failure\nbefore_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/working directory with spaces\nafter_pwd=/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/working directory with spaces\nbefore_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/bin\nafter_path=/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/bin\n",
         "stderr": "",
         "state_before": {
-          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/working directory with spaces",
-          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/bin"
+          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/working directory with spaces",
+          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/bin"
         },
         "state_after": {
-          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/working directory with spaces",
-          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-y0awtoo5/bin"
+          "PWD": "/private/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/working directory with spaces",
+          "PATH": "/var/folders/0r/yrqbjj7d0219tww5md2vsn9r0000gn/T/jfrog-cli-failure-cx6wpo9q/bin"
         },
-        "repository_before": [
-          " M plugins/jfrog/README.md",
-          "?? plugins/jfrog/tests/",
-          "?? work/"
-        ],
-        "repository_after": [
-          " M plugins/jfrog/README.md",
-          "?? plugins/jfrog/tests/",
-          "?? work/"
-        ]
+        "repository_before": [],
+        "repository_after": []
       }
     }
   ],
